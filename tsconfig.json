@@ -1,0 +1,34 @@
+{
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "src",
+    "baseUrl": "src",
+    "declaration": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "pretty": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "noErrorTruncation": true,
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "src/*": ["*"],
+      "scss/*": ["src/scss/*"],
+      "env": ["./src/env.d.ts"]
+    }
+    // "types": []
+  },
+  "include": ["src/**/*", "*.d.ts"],
+  "exclude": ["node_modules", "ignore/**/*", "ignore/src/**/*", "src/**/*.ignore.ts"]
+}

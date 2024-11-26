@@ -1,0 +1,14 @@
+//include fonts
+// @use 'fonts';
+
+//set vars, they could use fonts /\
+@forward 'vars';
+
+//reset all paddings/margins/etc we don't like from libs
+@forward 'resets';
+
+//add mixins, such as breakpoints for responsive ui and custom ones
+@forward 'mixins/index';
+
+//include overwrites for general html elements such as h1, div, a, etc...
+@forward 'general-custom';

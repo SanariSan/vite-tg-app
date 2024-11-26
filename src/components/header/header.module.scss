@@ -1,0 +1,24 @@
+.header {
+  height: 5%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #5931a9;
+
+  nav {
+    display: flex;
+  }
+
+  a {
+    color: #fff;
+    padding: 0.75rem;
+    text-decoration: none;
+  }
+
+  a.active {
+    background-color: #0005;
+  }
+
+  a:hover {
+    background-color: #0008;
+  }
+}

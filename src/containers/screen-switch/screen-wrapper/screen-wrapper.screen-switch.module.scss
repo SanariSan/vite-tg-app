@@ -1,0 +1,45 @@
+// only necessary positioning styles
+.screenWrapperContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms;
+
+  &.screenRight {
+    transform: translateX(100%);
+  }
+
+  &.screenLeft {
+    transform: translateX(-100%);
+  }
+
+  &.screenCenter {
+    transform: translateX(0);
+  }
+
+  // todo: remove, showcase only
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  // todo: remove, showcase only
+  .spinner {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: #3b82f6;
+    border-bottom-color: #3b82f6;
+    animation: spin 1s linear infinite;
+  }
+
+  // todo: remove, showcase only
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

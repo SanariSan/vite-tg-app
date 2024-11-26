@@ -1,0 +1,32 @@
+html,
+body,
+#app {
+  overflow: hidden;
+}
+
+#app {
+  width: 100dvw;
+  height: 100dvh;
+  position: relative;
+}
+
+// transitions
+// $trans: cubic-bezier(0.215, 0.61, 0.355, 1);
+// svg {
+//   transition: color 0.15s $trans;
+// }
+// p,
+// div,
+// span {
+//   transition: background-color 0.2s linear, color 0.15s $trans, height 0.3s $trans,
+//     max-height 0.3s $trans, min-height 0.3s $trans, max-width 0.3s $trans, border-color 0.3s $trans,
+//     grid-template-columns 0.4s $trans;
+//   //width 0.3s $trans,
+// }
+
+// outline elements for debugging
+* {
+  // box-sizing: border-box;
+  // outline: 1px solid lightseagreen !important;
+  // background: rgba(141, 234, 255, 0.1);
+}
